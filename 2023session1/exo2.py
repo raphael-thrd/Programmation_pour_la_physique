@@ -59,7 +59,7 @@ def Newton(f,fprime, x0, epsilon=1e-3,maxit=200):
 		if i>maxit:
 			print("pas de convergence")
 			return
-		print(f"Zeros trouve à x={x:.3f}")
+	print(f"Zeros trouve à x={x:.3f}")
 	return x
 		
 

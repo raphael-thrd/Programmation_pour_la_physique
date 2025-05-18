@@ -55,7 +55,7 @@ def Newton(f,fprime, x0, epsilon=1e-3,maxit=200):
 			return
 		x_ancien=x
 		x=x-f(x)/fprime(x)
-		
+		i+=1
 		if i>maxit:
 			print("pas de convergence")
 			return

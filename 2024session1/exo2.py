@@ -45,7 +45,7 @@ def trace(f):
 	plt.axis("equal")
 	plt.show()
 	
-#trace(f) #on voit qu'il y a des zeros vers 1.1,2.7,6.5,9.3
+#trace(f) #on voit qu'il y a des zeros vers 1,2.1,6,9
 
 for n in [1, 2.1, 6, 9]:
 	zero=Newton(f,df,n)

@@ -46,7 +46,7 @@ b=np.array([[7],[5],[-0.5]])
 
 Q,R=decomp_QR(A)
 
-x=np.linalg.inv(A)@Q.T@b
+x=np.linalg.inv(R)@Q.T@b
 
 print(x)
 

@@ -1,6 +1,11 @@
 import numpy as np
 import scipy as sc
 
+#..Question....
+#On sait que Qt=Q⁻¹ donc si on multiplie Rx=Qt*b par Q a gauche on a QRx=b et QR=A
+#donc Ax=b
+
+
 #....on definit des fonctions auxilliaires....
 
 def norme(v): #norme d'un vecteur

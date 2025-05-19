@@ -4,12 +4,9 @@ import math
 #=====on defini notre fonction serie de Taylor=============
 
 def expmat(A, N=20):
-    """
-    Calcule l'exponentielle d'une matrice A (complexe) via la série de Taylor.
-    """
     n = A.shape[0]
-    result = np.eye(n, dtype=np.complex128)
-    Ak = np.eye(n, dtype=np.complex128)
+    result = np.eye(n, dtype=np.complex128) #fais une matrice identité n x n
+    Ak = np.eye(n, dtype=np.complex128)#fais une matrice identité n x n
     for k in range(1, N + 1):
         Ak = Ak @ A
         coeff = 1.0 / math.factorial(k)

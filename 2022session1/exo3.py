@@ -2,7 +2,7 @@
 import numpy as np
 
 def f(t,beta):
-	return beta[0] + beta[1]*t+beta[2]*np.sin(np.pi * t)	
+	return beta[0] + beta[1]*t+beta[2]*np.sin(2*np.pi * t)	
 	
 #...Et de ses dérivées par rapport aux paramêtres......
 
@@ -11,7 +11,7 @@ gradf= [lambda t, beta: [1]*len(t),
 	lambda t, beta: np.sin(2*np.pi*t)]
 
 
-
+"""
 #===Definition de Triangulariser pour Gauss==============
 def triangulariser( M ) :
 	n = M.shape[0] # le nombre de lignes
@@ -57,7 +57,7 @@ def gauss(A , b ) : # trouver la solution x de Ax = b
 #====on peut aussi faire========
 def gauss(A, b):
     return np.linalg.solve(A, b)
-"""
+
 #====Définition de Levenberg-Marquardt============
 
 def lev_mar(t , y , f , gradf , beta0 ,lam0=1.E-4, epsilon =1.E-5) :

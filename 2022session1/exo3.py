@@ -107,6 +107,9 @@ y_ajust=[f(k,beta) for k in x]
 
 plt.plot(x,y_ajust, label="regression Lev-Mar")
 plt.plot(t,y, label="donnees experimentales")
+plt.xlabel("t")
+plt.ylabel("y")
+plt.title(f"y={beta[0]:.3f} + {beta[1]:.3f}*t + {beta[2]:.3f}*sin(2pi*t)")
 plt.legend()
 plt.show()
 
